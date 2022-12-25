@@ -1,0 +1,12 @@
+<h3> 目前的預設印表機為 {{ now_printer }} </h3>
+
+<form action="/run" method="POST">
+    <label for="choice">Select a file present type:</label><br>
+    <select id="choice" name="Type">
+      <option value="gdrive">Google drive id</option>
+      <option value="url">url</option>
+    </select><br>
+    <label for="input">Enter your Google drive id or url:</label><br>
+    <input type="text" id="id" name="id"><br><br>
+    <input type="submit" value="Print!">
+</form> 

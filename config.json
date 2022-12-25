@@ -1,0 +1,6 @@
+{
+    "libpath":"lib",
+    "tmppath":"tmp",
+    "tmp_clean_time": 30,
+    "paper_size": "A4"
+}
