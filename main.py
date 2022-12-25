@@ -11,6 +11,9 @@ with open('config.json') as f:
     tmppath = config['tmppath']
     tmp_clean_time = config['tmp_clean_time']
     paper_size = config['paper_size']
+    host = config['host']
+    port = config['port']
+    debug = config['debug']
 
 @app.route('/run', methods=['POST'])
 def run():
@@ -49,4 +52,4 @@ def hello():
     return render_template('index.html', now_printer=Printer.get_default_printer())
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host=host, port=port, debug=debug)
